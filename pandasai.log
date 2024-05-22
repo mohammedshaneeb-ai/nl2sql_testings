@@ -1,0 +1,2553 @@
+2024-05-22 17:49:49 [INFO] Question: Shortlist top 3 candidates who applied for job with job_id=23
+2024-05-22 17:49:49 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:49:49 [INFO] Prompt ID: 4fac1328-c244-4412-be26-5c3d9582baf6
+2024-05-22 17:49:49 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:49:49 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:49:49 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:49:50 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:49:50 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Shortlist top 3 candidates who applied for job with job_id=23
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:49:50 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:49:54 [INFO] Prompt used:
+            
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Shortlist top 3 candidates who applied for job with job_id=23
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:49:54 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# Write code here
+df = dfs[0]
+top_3_candidates = df[(df['job_id'] == 23)].nlargest(3, 'score')
+
+# Declare result var: 
+result = { "type": "dataframe", "value": top_3_candidates }
+            ```
+            
+2024-05-22 17:49:54 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:49:54 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:49:54 [INFO] 
+Code running:
+```
+df = dfs[0]
+top_3_candidates = df[df['job_id'] == 23].nlargest(3, 'score')
+result = {'type': 'dataframe', 'value': top_3_candidates}
+        ```
+2024-05-22 17:49:54 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:49:54 [INFO] Executing Step 7: ResultValidation
+2024-05-22 17:49:54 [INFO] Answer: {'type': 'dataframe', 'value':    id  job_id                  job_title    candidate_name  score  \
+3  16      23  Machine Learning Engineer        Zaheer K Z   80.0   
+1   6      23  Machine Learning Engineer  Mohammed Shaneeb   75.0   
+5  35      23  Machine Learning Engineer    Rohidh Krishna   75.0   
+
+            phone                       email  experience  age  \
+3      9658741232     zaheer.work24@gmail.com           5   23   
+1      8304046116  shaneebkottakkal@gmail.com           1   20   
+5  +91 9947730369      krish.rohidh@gmail.com           2   22   
+
+                    resume_link  \
+3  https://tinyurl.com/2aezpg6v   
+1  https://tinyurl.com/2ayahlm7   
+5  https://tinyurl.com/2caqpoe9   
+
+                                              skills  \
+3  "[\"Generative AI\", \"TensorFlow\", \"Kaggle\...   
+1  "[\"QLORA\", \"Falcon\", \"NLP\", \"Gemma\", \...   
+5  "[\"Linux Bash\", \"Write Technical Articles\"...   
+
+                                        technologies  \
+3  "[\"MLOps\", \"Streamlit\", \"YOLO models\", \...   
+1  "[\"QLORA\", \"Pandas\", \"Classification\", \...   
+5  "[\"Django\", \"TensorFlow\", \"PyTorch\", \"A...   
+
+                                       score_summary  
+3  The candidate has a solid background in machin...  
+1  The candidate has a solid foundation in ML/DL ...  
+5  Overall, the candidate has a good foundation i...  }
+2024-05-22 17:49:54 [INFO] Executing Step 8: ResultParsing
+2024-05-22 17:50:26 [INFO] Question: How many are applied for job with job_id=17
+2024-05-22 17:50:26 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:50:26 [INFO] Prompt ID: 7edf98ff-e44d-488a-83a0-7f540957e89c
+2024-05-22 17:50:26 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:50:26 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:50:26 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:50:26 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:50:26 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ How many are applied for job with job_id=17
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:50:27 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:50:29 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### QUERY
+ Shortlist top 3 candidates who applied for job with job_id=23
+### ANSWER
+ Check it out: <dataframe>
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ How many are applied for job with job_id=17
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:50:29 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Write code here
+temp_df = dfs[0][dfs[0]["job_id"] == 17]
+
+# Declare result var: 
+result = { "type": "number", "value": len(temp_df) }
+            ```
+            
+2024-05-22 17:50:29 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:50:29 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:50:29 [INFO] 
+Code running:
+```
+temp_df = dfs[0][dfs[0]['job_id'] == 17]
+result = {'type': 'number', 'value': len(temp_df)}
+        ```
+2024-05-22 17:50:29 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:50:30 [INFO] Executing Step 7: ResultValidation
+2024-05-22 17:50:30 [INFO] Answer: {'type': 'number', 'value': 10}
+2024-05-22 17:50:30 [INFO] Executing Step 8: ResultParsing
+2024-05-22 17:51:04 [INFO] Question: Shortlist 3 candidates who applied for job with job_id=23 with score more than 80
+2024-05-22 17:51:04 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:51:04 [INFO] Prompt ID: 3ee5bd60-df03-4722-ba98-92dfcd7388a8
+2024-05-22 17:51:04 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:51:04 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:51:04 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:51:04 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:51:04 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Shortlist 3 candidates who applied for job with job_id=23 with score more than 80
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:51:04 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:51:08 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### QUERY
+ Shortlist top 3 candidates who applied for job with job_id=23
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ How many are applied for job with job_id=17
+### ANSWER
+ 10
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Shortlist 3 candidates who applied for job with job_id=23 with score more than 80
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:51:08 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+df = dfs[0]
+df_job23 = df[df['job_id'] == 23]
+df_job23_score80 = df_job23[df_job23['score'] > 80]
+df_job23_score80 = df_job23_score80.sort_values(by='score', ascending=False)[:3]
+
+# Declare result var: 
+result = { "type": "dataframe", "value": df_job23_score80 }
+            ```
+            
+2024-05-22 17:51:08 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:51:08 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:51:08 [INFO] 
+Code running:
+```
+df = dfs[0]
+df_job23 = df[df['job_id'] == 23]
+df_job23_score80 = df_job23[df_job23['score'] > 80]
+df_job23_score80 = df_job23_score80.sort_values(by='score', ascending=False)[:3]
+result = {'type': 'dataframe', 'value': df_job23_score80}
+        ```
+2024-05-22 17:51:08 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:51:08 [INFO] Executing Step 7: ResultValidation
+2024-05-22 17:51:08 [INFO] Answer: {'type': 'dataframe', 'value': Empty DataFrame
+Columns: [id, job_id, job_title, candidate_name, score, phone, email, experience, age, resume_link, skills, technologies, score_summary]
+Index: []}
+2024-05-22 17:51:08 [INFO] Executing Step 8: ResultParsing
+2024-05-22 17:52:05 [INFO] Question: Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+2024-05-22 17:52:05 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:52:05 [INFO] Prompt ID: d041fe0b-564b-4d86-820f-aea805876123
+2024-05-22 17:52:05 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:52:05 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:52:05 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:52:05 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:52:05 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:52:05 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:52:09 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### QUERY
+ Shortlist top 3 candidates who applied for job with job_id=23
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ How many are applied for job with job_id=17
+### ANSWER
+ 10
+### QUERY
+ Shortlist 3 candidates who applied for job with job_id=23 with score more than 80
+### ANSWER
+ Check it out: <dataframe>
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:52:09 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+df_23 = dfs[0][dfs[0]['job_id'] == 23]
+df_23_langchain = df_23[df_23['skills'].str.contains('LangChain')]
+
+# Declare result var: 
+result = { "type": "dataframe", "value": df_23_langchain }
+            ```
+            
+2024-05-22 17:52:09 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:52:09 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:52:09 [INFO] 
+Code running:
+```
+df_23 = dfs[0][dfs[0]['job_id'] == 23]
+df_23_langchain = df_23[df_23['skills'].str.contains('LangChain')]
+result = {'type': 'dataframe', 'value': df_23_langchain}
+        ```
+2024-05-22 17:52:09 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:52:09 [INFO] Executing Step 7: ResultValidation
+2024-05-22 17:52:09 [INFO] Answer: {'type': 'dataframe', 'value':    id  job_id                  job_title candidate_name  score       phone  \
+3  16      23  Machine Learning Engineer     Zaheer K Z   80.0  9658741232   
+
+                     email  experience  age                   resume_link  \
+3  zaheer.work24@gmail.com           5   23  https://tinyurl.com/2aezpg6v   
+
+                                              skills  \
+3  "[\"Generative AI\", \"TensorFlow\", \"Kaggle\...   
+
+                                        technologies  \
+3  "[\"MLOps\", \"Streamlit\", \"YOLO models\", \...   
+
+                                       score_summary  
+3  The candidate has a solid background in machin...  }
+2024-05-22 17:52:09 [INFO] Executing Step 8: ResultParsing
+2024-05-22 17:52:38 [INFO] Question: Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+2024-05-22 17:52:38 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:52:38 [INFO] Prompt ID: 554a7914-e267-49f9-914f-d8de7f137d95
+2024-05-22 17:52:38 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:52:38 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:52:38 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:52:38 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:52:38 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:52:38 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:52:41 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### QUERY
+ Shortlist top 3 candidates who applied for job with job_id=23
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ How many are applied for job with job_id=17
+### ANSWER
+ 10
+### QUERY
+ Shortlist 3 candidates who applied for job with job_id=23 with score more than 80
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:52:41 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# Write code here
+df = dfs[0]
+result = {"type": "dataframe", "value": df[(df["job_id"] == 23) & (df["skills"].str.contains("langchain"))].head(2)}
+            ```
+            
+2024-05-22 17:52:41 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:52:41 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:52:41 [INFO] 
+Code running:
+```
+df = dfs[0]
+result = {'type': 'dataframe', 'value': df[(df['job_id'] == 23) & df['skills'].str.contains('langchain')].head(2)}
+        ```
+2024-05-22 17:52:41 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:52:41 [INFO] Executing Step 7: ResultValidation
+2024-05-22 17:52:41 [INFO] Answer: {'type': 'dataframe', 'value': Empty DataFrame
+Columns: [id, job_id, job_title, candidate_name, score, phone, email, experience, age, resume_link, skills, technologies, score_summary]
+Index: []}
+2024-05-22 17:52:41 [INFO] Executing Step 8: ResultParsing
+2024-05-22 17:52:44 [INFO] Question: Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+2024-05-22 17:52:44 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:52:44 [INFO] Prompt ID: 3bd26a07-7e78-4871-9551-cb2c5d8d9b64
+2024-05-22 17:52:44 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:52:44 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:52:44 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:52:44 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:52:44 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:52:44 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:52:46 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ How many are applied for job with job_id=17
+### ANSWER
+ 10
+### QUERY
+ Shortlist 3 candidates who applied for job with job_id=23 with score more than 80
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:52:47 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# Write code here
+
+result = {
+    "type": "dataframe",
+    "value": dfs[0][
+        (dfs[0]["job_id"] == 23) & (dfs[0]["skills"].str.contains("langchain"))
+    ].head(2)
+}
+            ```
+            
+2024-05-22 17:52:47 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:52:47 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:52:47 [INFO] 
+Code running:
+```
+result = {'type': 'dataframe', 'value': dfs[0][(dfs[0]['job_id'] == 23) & dfs[0]['skills'].str.contains('langchain')].head(2)}
+        ```
+2024-05-22 17:52:47 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:52:47 [INFO] Executing Step 7: ResultValidation
+2024-05-22 17:52:47 [INFO] Answer: {'type': 'dataframe', 'value': Empty DataFrame
+Columns: [id, job_id, job_title, candidate_name, score, phone, email, experience, age, resume_link, skills, technologies, score_summary]
+Index: []}
+2024-05-22 17:52:47 [INFO] Executing Step 8: ResultParsing
+2024-05-22 17:52:49 [INFO] Question: Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+2024-05-22 17:52:49 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:52:50 [INFO] Prompt ID: 3fecfcfc-81ea-459c-bfc0-fe26fa257cd8
+2024-05-22 17:52:50 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:52:50 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:52:50 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:52:50 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:52:50 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:52:50 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:52:53 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### ANSWER
+ 10
+### QUERY
+ Shortlist 3 candidates who applied for job with job_id=23 with score more than 80
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:52:53 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+candidates = dfs[0].query('job_id == 23 and "langchain" in skills')
+candidates = candidates.sort_values(by='score', ascending=False).head(3)
+
+# Declare result var: 
+result = { "type": "dataframe", "value": candidates }
+            ```
+            
+2024-05-22 17:52:53 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:52:53 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:52:53 [INFO] 
+Code running:
+```
+candidates = dfs[0].query('job_id == 23 and "langchain" in skills')
+candidates = candidates.sort_values(by='score', ascending=False).head(3)
+result = {'type': 'dataframe', 'value': candidates}
+        ```
+2024-05-22 17:52:53 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:52:54 [INFO] Executing Step 7: ResultValidation
+2024-05-22 17:52:54 [INFO] Answer: {'type': 'dataframe', 'value': Empty DataFrame
+Columns: [id, job_id, job_title, candidate_name, score, phone, email, experience, age, resume_link, skills, technologies, score_summary]
+Index: []}
+2024-05-22 17:52:54 [INFO] Executing Step 8: ResultParsing
+2024-05-22 17:52:57 [INFO] Question: Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+2024-05-22 17:52:57 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:52:57 [INFO] Prompt ID: 6874b98f-110f-4b14-b5a7-bc3cdea999f6
+2024-05-22 17:52:57 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:52:57 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:52:57 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:52:57 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:52:57 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:52:57 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:53:12 [ERROR] Pipeline failed on step 3: No code found in the response
+2024-05-22 17:53:47 [INFO] Question: Give me graph of the dataframe
+2024-05-22 17:53:47 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:53:47 [INFO] Prompt ID: c75558a9-f2b5-41bb-a2d3-5e3044b3104a
+2024-05-22 17:53:47 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:53:47 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:53:47 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:53:47 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:53:47 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Give me graph of the dataframe
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:53:47 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:53:51 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Give me graph of the dataframe
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:53:51 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Write code here
+filtered_df = dfs[0][dfs[0]["skills"].str.contains("langchain")]
+filtered_df.plot.bar(x="candidate_name", y="score")
+plt.title("Score of candidates with langchain skill")
+plt.xlabel("Candidate Name")
+plt.ylabel("Score")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("score_of_candidates_with_langchain_skill.png")
+
+# Declare result var: 
+result = { "type": "plot", "value": "score_of_candidates_with_langchain_skill.png" }
+            ```
+            
+2024-05-22 17:53:51 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:53:51 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:53:51 [INFO] Saving charts to /home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png
+2024-05-22 17:53:51 [INFO] 
+Code running:
+```
+filtered_df = dfs[0][dfs[0]['skills'].str.contains('langchain')]
+filtered_df.plot.bar(x='candidate_name', y='score')
+plt.title('Score of candidates with langchain skill')
+plt.xlabel('Candidate Name')
+plt.ylabel('Score')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png'}
+        ```
+2024-05-22 17:53:51 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:53:51 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_core.py", line 1159, in bar
+    return self(kind="bar", x=x, y=y, **kwargs)
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_core.py", line 1000, in __call__
+    return plot_backend.plot(data, kind=kind, **kwargs)
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_matplotlib/__init__.py", line 71, in plot
+    plot_obj.generate()
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_matplotlib/core.py", line 459, in generate
+    self._post_plot_logic(ax, self.data)
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_matplotlib/core.py", line 1739, in _post_plot_logic
+    s_edge = self.ax_pos[0] - 0.25 + self.lim_offset
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+2024-05-22 17:53:51 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-05-22 17:53:51 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-05-22 17:53:51 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-05-22 17:53:51 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+### QUERY
+ Give me graph of the dataframe
+
+You generated this python code:
+filtered_df = dfs[0][dfs[0]['skills'].str.contains('langchain')]
+filtered_df.plot.bar(x='candidate_name', y='score')
+plt.title('Score of candidates with langchain skill')
+plt.xlabel('Candidate Name')
+plt.ylabel('Score')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_core.py", line 1159, in bar
+    return self(kind="bar", x=x, y=y, **kwargs)
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_core.py", line 1000, in __call__
+    return plot_backend.plot(data, kind=kind, **kwargs)
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_matplotlib/__init__.py", line 71, in plot
+    plot_obj.generate()
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_matplotlib/core.py", line 459, in generate
+    self._post_plot_logic(ax, self.data)
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_matplotlib/core.py", line 1739, in _post_plot_logic
+    s_edge = self.ax_pos[0] - 0.25 + self.lim_offset
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+
+Fix the python code above and return the new python code:
+2024-05-22 17:53:51 [INFO] Executing Step 1: CodeGenerator
+2024-05-22 17:53:57 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+### QUERY
+ Give me graph of the dataframe
+
+You generated this python code:
+filtered_df = dfs[0][dfs[0]['skills'].str.contains('langchain')]
+filtered_df.plot.bar(x='candidate_name', y='score')
+plt.title('Score of candidates with langchain skill')
+plt.xlabel('Candidate Name')
+plt.ylabel('Score')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_core.py", line 1159, in bar
+    return self(kind="bar", x=x, y=y, **kwargs)
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_core.py", line 1000, in __call__
+    return plot_backend.plot(data, kind=kind, **kwargs)
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_matplotlib/__init__.py", line 71, in plot
+    plot_obj.generate()
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_matplotlib/core.py", line 459, in generate
+    self._post_plot_logic(ax, self.data)
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandas/plotting/_matplotlib/core.py", line 1739, in _post_plot_logic
+    s_edge = self.ax_pos[0] - 0.25 + self.lim_offset
+IndexError: index 0 is out of bounds for axis 0 with size 0
+
+
+Fix the python code above and return the new python code:
+            
+2024-05-22 17:53:57 [INFO] Code generated:
+            ```
+            filtered_df = dfs[0][dfs[0]['skills'].str.contains('langchain')]
+if len(filtered_df) > 0:
+    filtered_df.plot.bar(x='candidate_name', y='score')
+    plt.title('Score of candidates with langchain skill')
+    plt.xlabel('Candidate Name')
+    plt.ylabel('Score')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig('/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'text', 'value': 'No candidates with langchain skill found'}
+            ```
+            
+2024-05-22 17:53:57 [INFO] Executing Step 2: CodeCleaning
+2024-05-22 17:53:57 [INFO] Saving charts to /home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png
+2024-05-22 17:53:57 [INFO] 
+Code running:
+```
+filtered_df = dfs[0][dfs[0]['skills'].str.contains('langchain')]
+if len(filtered_df) > 0:
+    filtered_df.plot.bar(x='candidate_name', y='score')
+    plt.title('Score of candidates with langchain skill')
+    plt.xlabel('Candidate Name')
+    plt.ylabel('Score')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig('/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'text', 'value': 'No candidates with langchain skill found'}
+        ```
+2024-05-22 17:53:57 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandasai/pipelines/chat/code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type text
+
+2024-05-22 17:53:57 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2024-05-22 17:53:57 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-05-22 17:53:57 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-05-22 17:53:57 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+### QUERY
+ Give me graph of the dataframe
+
+You generated this python code:
+filtered_df = dfs[0][dfs[0]['skills'].str.contains('langchain')]
+if len(filtered_df) > 0:
+    filtered_df.plot.bar(x='candidate_name', y='score')
+    plt.title('Score of candidates with langchain skill')
+    plt.xlabel('Candidate Name')
+    plt.ylabel('Score')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig('/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'text', 'value': 'No candidates with langchain skill found'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandasai/pipelines/chat/code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type text
+
+
+Fix the python code above and return the new python code:
+2024-05-22 17:53:57 [INFO] Executing Step 1: CodeGenerator
+2024-05-22 17:54:01 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+### QUERY
+ Give me graph of the dataframe
+
+You generated this python code:
+filtered_df = dfs[0][dfs[0]['skills'].str.contains('langchain')]
+if len(filtered_df) > 0:
+    filtered_df.plot.bar(x='candidate_name', y='score')
+    plt.title('Score of candidates with langchain skill')
+    plt.xlabel('Candidate Name')
+    plt.ylabel('Score')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig('/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'text', 'value': 'No candidates with langchain skill found'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandasai/pipelines/chat/code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type text
+
+
+Fix the python code above and return the new python code:
+            
+2024-05-22 17:54:01 [INFO] Code generated:
+            ```
+            import matplotlib.pyplot as plt
+
+filtered_df = dfs[0][dfs[0]['skills'].str.contains('langchain')]
+if len(filtered_df) > 0:
+    filtered_df.plot.bar(x='candidate_name', y='score')
+    plt.title('Score of candidates with langchain skill')
+    plt.xlabel('Candidate Name')
+    plt.ylabel('Score')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig('/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'text', 'value': 'No candidates with langchain skill found'}
+            ```
+            
+2024-05-22 17:54:01 [INFO] Executing Step 2: CodeCleaning
+2024-05-22 17:54:01 [INFO] Saving charts to /home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png
+2024-05-22 17:54:01 [INFO] 
+Code running:
+```
+filtered_df = dfs[0][dfs[0]['skills'].str.contains('langchain')]
+if len(filtered_df) > 0:
+    filtered_df.plot.bar(x='candidate_name', y='score')
+    plt.title('Score of candidates with langchain skill')
+    plt.xlabel('Candidate Name')
+    plt.ylabel('Score')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig('/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'text', 'value': 'No candidates with langchain skill found'}
+        ```
+2024-05-22 17:54:01 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandasai/pipelines/chat/code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type text
+
+2024-05-22 17:54:01 [WARNING] Failed to execute code retrying with a correction framework [retry number: 3]
+2024-05-22 17:54:01 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-05-22 17:54:01 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-05-22 17:54:01 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+### QUERY
+ Give me graph of the dataframe
+
+You generated this python code:
+filtered_df = dfs[0][dfs[0]['skills'].str.contains('langchain')]
+if len(filtered_df) > 0:
+    filtered_df.plot.bar(x='candidate_name', y='score')
+    plt.title('Score of candidates with langchain skill')
+    plt.xlabel('Candidate Name')
+    plt.ylabel('Score')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig('/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'text', 'value': 'No candidates with langchain skill found'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandasai/pipelines/chat/code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type text
+
+
+Fix the python code above and return the new python code:
+2024-05-22 17:54:01 [INFO] Executing Step 1: CodeGenerator
+2024-05-22 17:54:07 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Shortlist candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+### QUERY
+ Give me graph of the dataframe
+
+You generated this python code:
+filtered_df = dfs[0][dfs[0]['skills'].str.contains('langchain')]
+if len(filtered_df) > 0:
+    filtered_df.plot.bar(x='candidate_name', y='score')
+    plt.title('Score of candidates with langchain skill')
+    plt.xlabel('Candidate Name')
+    plt.ylabel('Score')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig('/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'text', 'value': 'No candidates with langchain skill found'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandasai/pipelines/chat/code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type text
+
+
+Fix the python code above and return the new python code:
+            
+2024-05-22 17:54:07 [INFO] Code generated:
+            ```
+            filtered_df = dfs[0][dfs[0]['skills'].str.contains('langchain')]
+if len(filtered_df) > 0:
+    filtered_df.plot.bar(x='candidate_name', y='score')
+    plt.title('Score of candidates with langchain skill')
+    plt.xlabel('Candidate Name')
+    plt.ylabel('Score')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig('/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'text', 'value': 'No candidates with langchain skill found'}
+            ```
+            
+2024-05-22 17:54:07 [INFO] Executing Step 2: CodeCleaning
+2024-05-22 17:54:07 [INFO] Saving charts to /home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png
+2024-05-22 17:54:07 [INFO] 
+Code running:
+```
+filtered_df = dfs[0][dfs[0]['skills'].str.contains('langchain')]
+if len(filtered_df) > 0:
+    filtered_df.plot.bar(x='candidate_name', y='score')
+    plt.title('Score of candidates with langchain skill')
+    plt.xlabel('Candidate Name')
+    plt.ylabel('Score')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.savefig('/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png')
+    result = {'type': 'plot', 'value': '/home/mohammed_shaneeb/Desktop/Generative AI/notebooks/exports/charts/temp_chart.png'}
+else:
+    result = {'type': 'text', 'value': 'No candidates with langchain skill found'}
+        ```
+2024-05-22 17:54:07 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/home/mohammed_shaneeb/anaconda3/envs/hireai/lib/python3.10/site-packages/pandasai/pipelines/chat/code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'str'> must match with type text
+
+2024-05-22 17:54:07 [ERROR] Pipeline failed on step 6: Value type <class 'str'> must match with type text
+2024-05-22 17:54:57 [INFO] Question: from column with job_id=14,Short list top 3 candidates
+2024-05-22 17:54:57 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:54:57 [INFO] Prompt ID: cbd8959e-f179-4506-bb92-60dd16581ea2
+2024-05-22 17:54:57 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:54:57 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:54:57 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:54:57 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:54:57 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ from column with job_id=14,Short list top 3 candidates
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:54:57 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:55:00 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+### QUERY
+ Give me graph of the dataframe
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ from column with job_id=14,Short list top 3 candidates
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:55:00 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Write code here
+
+# Get the candidates who applied for job with job_id=14
+candidates = dfs[0][dfs[0]['job_id'] == 14]
+
+# Sort the candidates by their score in descending order
+candidates = candidates.sort_values(by='score', ascending=False)
+
+# Get the top 3 candidates
+top_candidates = candidates.head(3)
+
+# Declare result var: 
+result = { "type": "dataframe", "value": top_candidates }
+            ```
+            
+2024-05-22 17:55:00 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:55:00 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:55:00 [INFO] 
+Code running:
+```
+candidates = dfs[0][dfs[0]['job_id'] == 14]
+candidates = candidates.sort_values(by='score', ascending=False)
+top_candidates = candidates.head(3)
+result = {'type': 'dataframe', 'value': top_candidates}
+        ```
+2024-05-22 17:55:00 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:55:00 [INFO] Executing Step 7: ResultValidation
+2024-05-22 17:55:00 [INFO] Answer: {'type': 'dataframe', 'value':     id  job_id           job_title  candidate_name  score           phone  \
+32  33      14  Back End Developer  Rohidh Krishna   85.0  +91 9947730369   
+52  53      14  Back End Developer  Daniel Trevino   85.0  (123) 456-7890   
+55  56      14  Back End Developer      ABDUL RUBB   85.0  +91 7909199591   
+
+                          email  experience  age  \
+32       krish.rohidh@gmail.com           2   22   
+52  shaneebunofficail@gmail.com           5   30   
+55         abdurabb00@gmail.com           3   25   
+
+                     resume_link  \
+32  https://tinyurl.com/2caqpoe9   
+52  https://tinyurl.com/28r4ec3k   
+55  https://tinyurl.com/224t9uyd   
+
+                                               skills  \
+32  "[\"Linux Bash\", \"Write Technical Articles\"...   
+52  "[\"Airflows\", \"NoSQL (MongoDB)\", \"ETLs\",...   
+55  "[\"Git\", \"PostgreSQL\", \"React Redux\", \"...   
+
+                                         technologies  \
+32  "[\"Django\", \"TensorFlow\", \"PyTorch\", \"A...   
+52  "[\"Python\", \"Google Analytics API\", \"Sale...   
+55  "[\"Multer\", \"Redux\", \"React\", \"Stripe\"...   
+
+                                        score_summary  
+32  Overall, the resume is strong with a good bala...  
+52  The candidate has extensive experience as a da...  
+55  The candidate has demonstrated skills in softw...  }
+2024-05-22 17:55:00 [INFO] Executing Step 8: ResultParsing
+2024-05-22 17:55:41 [INFO] Question: What is the phone number of Rohidh Krishna
+2024-05-22 17:55:41 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:55:41 [INFO] Prompt ID: 9a02a29b-97d6-4bd2-bd96-53d9167b605b
+2024-05-22 17:55:41 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:55:41 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:55:41 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:55:41 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:55:41 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What is the phone number of Rohidh Krishna
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:55:41 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:55:44 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist 2 candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+### QUERY
+ Give me graph of the dataframe
+### QUERY
+ from column with job_id=14,Short list top 3 candidates
+### ANSWER
+ Check it out: <dataframe>
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What is the phone number of Rohidh Krishna
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:55:44 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+df = dfs[0]
+df_filtered = df[(df["candidate_name"] == "Rohidh Krishna") & (df["job_id"] == 23)]
+result = {
+    "type": "string",
+    "value": f"The phone number of Rohidh Krishna is {df_filtered['phone'].values[0]}."
+}
+            ```
+            
+2024-05-22 17:55:44 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:55:44 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:55:44 [INFO] 
+Code running:
+```
+df = dfs[0]
+df_filtered = df[(df['candidate_name'] == 'Rohidh Krishna') & (df['job_id'] == 23)]
+result = {'type': 'string', 'value': f"The phone number of Rohidh Krishna is {df_filtered['phone'].values[0]}."}
+        ```
+2024-05-22 17:55:44 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:55:44 [INFO] Executing Step 7: ResultValidation
+2024-05-22 17:55:44 [INFO] Answer: {'type': 'string', 'value': 'The phone number of Rohidh Krishna is +91 9947730369.'}
+2024-05-22 17:55:45 [INFO] Executing Step 8: ResultParsing
+2024-05-22 17:56:06 [INFO] Question: What are his skills
+2024-05-22 17:56:06 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:56:06 [INFO] Prompt ID: e85f4eeb-ee14-4d1e-b778-02c03e6a815a
+2024-05-22 17:56:06 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:56:06 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:56:06 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:56:06 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:56:06 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What are his skills
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:56:06 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:56:09 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist top candidates who applied for job with job_id=23 who have also skill in langchain
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+### QUERY
+ Give me graph of the dataframe
+### QUERY
+ from column with job_id=14,Short list top 3 candidates
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ What is the phone number of Rohidh Krishna
+### ANSWER
+ The phone number of Rohidh Krishna is +91 9947730369.
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What are his skills
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:56:09 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+df_sj = dfs[0][dfs[0]["job_id"] == 23]
+df_sj = df_sj[df_sj["skills"].str.contains("langchain")]
+result = {"type": "dataframe", "value": df_sj}
+            ```
+            
+2024-05-22 17:56:09 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:56:09 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:56:09 [INFO] 
+Code running:
+```
+df_sj = dfs[0][dfs[0]['job_id'] == 23]
+df_sj = df_sj[df_sj['skills'].str.contains('langchain')]
+result = {'type': 'dataframe', 'value': df_sj}
+        ```
+2024-05-22 17:56:09 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:56:09 [INFO] Executing Step 7: ResultValidation
+2024-05-22 17:56:09 [INFO] Answer: {'type': 'dataframe', 'value': Empty DataFrame
+Columns: [id, job_id, job_title, candidate_name, score, phone, email, experience, age, resume_link, skills, technologies, score_summary]
+Index: []}
+2024-05-22 17:56:09 [INFO] Executing Step 8: ResultParsing
+2024-05-22 17:56:34 [INFO] Question: from column with job_id=11,Short list top  candidates
+2024-05-22 17:56:34 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:56:34 [INFO] Prompt ID: 2b233431-6d73-46d1-8e29-758d7c3b2536
+2024-05-22 17:56:34 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:56:34 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:56:34 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:56:34 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:56:34 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ from column with job_id=11,Short list top  candidates
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:56:34 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:56:37 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Shortlist  candidates who applied for job with job_id=23 who have also skill in langchain
+### QUERY
+ Give me graph of the dataframe
+### QUERY
+ from column with job_id=14,Short list top 3 candidates
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ What is the phone number of Rohidh Krishna
+### ANSWER
+ The phone number of Rohidh Krishna is +91 9947730369.
+### QUERY
+ What are his skills
+### ANSWER
+ Check it out: <dataframe>
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ from column with job_id=11,Short list top  candidates
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:56:37 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# Write code here
+df = dfs[0]
+result = {
+    "type": "dataframe",
+    "value": df[df["job_id"] == 11].sort_values(by="score", ascending=False)[:3]
+}
+            ```
+            
+2024-05-22 17:56:37 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:56:37 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:56:37 [INFO] 
+Code running:
+```
+df = dfs[0]
+result = {'type': 'dataframe', 'value': df[df['job_id'] == 11].sort_values(by='score', ascending=False)[:3]}
+        ```
+2024-05-22 17:56:37 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:56:37 [INFO] Executing Step 7: ResultValidation
+2024-05-22 17:56:37 [INFO] Answer: {'type': 'dataframe', 'value':     id  job_id       job_title   candidate_name  score           phone  \
+19  20      11  Data Scientist       Zaheer K Z   85.0      9658741232   
+29  30      11  Data Scientist   Rohidh Krishna   85.0  +91 9947730369   
+38  39      11  Data Scientist  ALEXANDER OWENS   85.0  (123) 456-7890   
+
+                      email  experience  age                   resume_link  \
+19  zaheer.work24@gmail.com           5   23  https://tinyurl.com/2aezpg6v   
+29   krish.rohidh@gmail.com           2   22  https://tinyurl.com/2caqpoe9   
+38     alex.owens@email.com           3   30  https://tinyurl.com/22vwmlnl   
+
+                                               skills  \
+19  "[\"Generative AI\", \"TensorFlow\", \"Kaggle\...   
+29  "[\"Linux Bash\", \"Write Technical Articles\"...   
+38  "[\"Apache Spark\", \"Informatica\", \"NLTK (N...   
+
+                                         technologies  \
+19  "[\"MLOps\", \"Streamlit\", \"YOLO models\", \...   
+29  "[\"Django\", \"TensorFlow\", \"PyTorch\", \"A...   
+38  "[\"NLTK\", \"Apache Spark\", \"Informatica\",...   
+
+                                        score_summary  
+19  Overall, this is a strong resume for a data sc...  
+29  The candidate has a strong background in data ...  
+38  The candidate is a strong fit for the data sci...  }
+2024-05-22 17:56:37 [INFO] Executing Step 8: ResultParsing
+2024-05-22 17:57:03 [INFO] Question: from column with job_id=20,Short list top  candidates
+2024-05-22 17:57:03 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:57:03 [INFO] Prompt ID: 5b1a769e-a355-46ef-896a-a0e3f47a9b0b
+2024-05-22 17:57:03 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:57:03 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:57:03 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:57:03 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:57:03 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ from column with job_id=20,Short list top  candidates
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:57:03 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:57:06 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### QUERY
+ Give me graph of the dataframe
+### QUERY
+ from column with job_id=14,Short list top 3 candidates
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ What is the phone number of Rohidh Krishna
+### ANSWER
+ The phone number of Rohidh Krishna is +91 9947730369.
+### QUERY
+ What are his skills
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ from column with job_id=11,Short list top  candidates
+### ANSWER
+ Check it out: <dataframe>
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ from column with job_id=20,Short list top  candidates
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:57:06 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+# Write code here
+dfs[0] = dfs[0].fillna("")
+
+job_id = 20
+top_3 = dfs[0][dfs[0]["job_id"]==job_id].sort_values(by="score", ascending=False).head(3)
+
+# Declare result var: 
+result = { "type": "dataframe", "value": top_3 }
+            ```
+            
+2024-05-22 17:57:06 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:57:06 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:57:06 [INFO] 
+Code running:
+```
+dfs[0] = dfs[0].fillna('')
+job_id = 20
+top_3 = dfs[0][dfs[0]['job_id'] == job_id].sort_values(by='score', ascending=False).head(3)
+result = {'type': 'dataframe', 'value': top_3}
+        ```
+2024-05-22 17:57:06 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:57:06 [INFO] Executing Step 7: ResultValidation
+2024-05-22 17:57:06 [INFO] Answer: {'type': 'dataframe', 'value':     id  job_id            job_title    candidate_name  score           phone  \
+77  78      20  Front End Developer       KATHY JAMES   75.0  (123) 456-7890   
+11  12      20  Front End Developer   Thanseeh Yaseen   70.0      8596744785   
+23  24      20  Front End Developer  AL AAJ DIYOUF KV   70.0  +91 8590629210   
+
+                          email  experience  age  \
+77  shaneebunofficail@gmail.com           4   32   
+11        yaseenkdr27@gmail.com           1   21   
+23          diyoufkv7@gmail.com           2   21   
+
+                     resume_link  \
+77  https://tinyurl.com/2y24dz2g   
+11  https://tinyurl.com/2dbvs8m7   
+23  https://tinyurl.com/2yozo6hu   
+
+                                               skills  \
+77  "[\"Django\", \"Angular.js\", \"Jest\", \"Java...   
+11  "[\"Figma\", \"Twilio\", \"Gunicorn\", \"Pytho...   
+23  "[\"Angular Materials\", \"JavaScript\", \"Mon...   
+
+                                         technologies  \
+77  "[\"Twitter API\", \"Django\", \"Angular.js\",...   
+11  "[\"Tailwind CSS\", \"Twilio\", \"Simple JWT\"...   
+23  "[\"AWS S3\", \"NestJS\", \"Bcrypt\", \"NodeJs...   
+
+                                        score_summary  
+77  The candidate has a strong background in progr...  
+11  The candidate has a solid foundation in front-...  
+23  The candidate is a skilled MEAN stack develope...  }
+2024-05-22 17:57:06 [INFO] Executing Step 8: ResultParsing
+2024-05-22 17:57:18 [INFO] Question: from column with job_id=20,Short list top 5 candidates
+2024-05-22 17:57:18 [INFO] Running PandasAI with langchain_chat-google-generative-ai LLM...
+2024-05-22 17:57:18 [INFO] Prompt ID: 8f63b8d7-221a-4bee-8a85-06453a7c26e8
+2024-05-22 17:57:18 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-22 17:57:18 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-22 17:57:18 [INFO] Executing Step 1: CacheLookup
+2024-05-22 17:57:18 [INFO] Executing Step 2: PromptGeneration
+2024-05-22 17:57:18 [INFO] Using prompt: <dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ from column with job_id=20,Short list top 5 candidates
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-22 17:57:18 [INFO] Executing Step 3: CodeGenerator
+2024-05-22 17:57:22 [INFO] Prompt used:
+            
+
+### PREVIOUS CONVERSATION
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ What is the phone number of Rohidh Krishna
+### ANSWER
+ The phone number of Rohidh Krishna is +91 9947730369.
+### QUERY
+ What are his skills
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ from column with job_id=11,Short list top  candidates
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ from column with job_id=20,Short list top  candidates
+### ANSWER
+ Check it out: <dataframe>
+<dataframe name="adminapp_jobapplication">
+dfs[0]:79x13
+id,job_id,job_title,candidate_name,score,phone,email,experience,age,resume_link,skills,technologies,score_summary
+77,19,React & Next.js Developer,KATHY JAMES,60.0,(123) 456-7890,shaneebunofficail@gmail.com,4,32,https://tinyurl.com/2y24dz2g,"""[\""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Eclipse\"", \""REST APIs\"", \""SQL\"", \""JavaScript\"", \""React.js\"", \""HTML/ CSS\""]""","""[\""Twitter API\"", \""Django\"", \""Angular.js\"", \""Jest\"", \""Java\"", \""Python\"", \""scikit-learn\"", \""Node\"", \""Instagram API\""]""","The candidate has a good understanding of front-end development and has experience with React.js. However, the candidate lacks experience with Next.js and server-side rendering. The candidate also does not have a strong portfolio showcasing previous works and lacks familiarity with state management libraries such as Redux. The candidate's experience and skills match 60% of the job requirements."
+45,17,Machine Learning Engineer,MOHAMMED SHAMEEM,45.0,+917994466262,shameemmohammed208@gmail.com,3,24,https://tinyurl.com/2737wrwc,"""[\""Bloc Provider\"", \""Dart\"", \""Firebase\"", \""Flutter\"", \""Problem Solving\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\"", \""Postman\""]""","""[\""Dart\"", \""Firebase\"", \""Flutter\"", \""Bloc\"", \""Git Hub\"", \""Ui Development\"", \""State Management\"", \""Git\"", \""Rest Api\""]""","The candidate has experience in mobile development, but lacks the specific skills and experience needed for the AI Engineer position. The candidate may want to consider gaining experience and developing skills in machine learning, natural language processing, and deep learning to be a good fit for this job."
+35,23,Machine Learning Engineer,Rohidh Krishna,75.0,+91 9947730369,krish.rohidh@gmail.com,2,22,https://tinyurl.com/2caqpoe9,"""[\""Linux Bash\"", \""Write Technical Articles\"", \""Computer Vision\"", \""Natural Language Processing\"", \""JavaScript\"", \""Python\"", \""Flutter, Dart\"", \""Asynchronous Programming\"", \""Machine Learning\"", \""Web Development\"", \""Multi Threading/Processing\"", \""Deep Learning\"", \""Generative Adversarial Network\"", \""Mobile Development\"", \""SQL (MySQL, SQLite)\"", \""C/C++\""]""","""[\""Django\"", \""TensorFlow\"", \""PyTorch\"", \""AWS (EC2, S3)\"", \""Keras\"", \""Matplotlib\"", \""Flask\"", \""XPath\"", \""Numpy\"", \""FastAPI\"", \""Selenium\"", \""Pandas\"", \""Git\"", \""RegEx\"", \""OpenCV\"", \""Github\"", \""Scikit-Image\"", \""PyGame\"", \""Kivy\"", \""Seaborn\"", \""Scikit-Learn\"", \""Beautiful Soup\""]""","Overall, the candidate has a good foundation in machine learning and deep learning, but needs to gain experience in cloud technologies to be a good fit for this role."
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ from column with job_id=20,Short list top 5 candidates
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+            
+2024-05-22 17:57:22 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Get the data from DataFrame
+df = dfs[0]
+
+# Filter the data to only include rows where job_id is 20
+result_df = df[df['job_id'] == 20]
+
+# Sort the data by score in descending order
+result_df = result_df.sort_values('score', ascending=False)
+
+# Shortlist top 5 candidates
+result_df = result_df.head(5)
+
+# Declare result var: 
+result = { "type": "dataframe", "value": result_df }
+            ```
+            
+2024-05-22 17:57:22 [INFO] Executing Step 4: CachePopulation
+2024-05-22 17:57:22 [INFO] Executing Step 5: CodeCleaning
+2024-05-22 17:57:22 [INFO] 
+Code running:
+```
+df = dfs[0]
+result_df = df[df['job_id'] == 20]
+result_df = result_df.sort_values('score', ascending=False)
+result_df = result_df.head(5)
+result = {'type': 'dataframe', 'value': result_df}
+        ```
+2024-05-22 17:57:22 [INFO] Executing Step 6: CodeExecution
+2024-05-22 17:57:22 [INFO] Executing Step 7: ResultValidation
+2024-05-22 17:57:22 [INFO] Answer: {'type': 'dataframe', 'value':     id  job_id            job_title                   candidate_name  score  \
+77  78      20  Front End Developer                      KATHY JAMES   75.0   
+11  12      20  Front End Developer                  Thanseeh Yaseen   70.0   
+23  24      20  Front End Developer                 AL AAJ DIYOUF KV   70.0   
+65  66      20  Front End Developer  M A U S O O F   A B D U L L A H   65.0   
+20  21      20  Front End Developer                       Zaheer K Z   60.0   
+
+             phone                        email  experience  age  \
+77  (123) 456-7890  shaneebunofficail@gmail.com           4   32   
+11      8596744785        yaseenkdr27@gmail.com           1   21   
+23  +91 8590629210          diyoufkv7@gmail.com           2   21   
+65  +91 9900710261    mausoofabdullah@gmail.com           3   30   
+20      9658741232      zaheer.work24@gmail.com           5   23   
+
+                     resume_link  \
+77  https://tinyurl.com/2y24dz2g   
+11  https://tinyurl.com/2dbvs8m7   
+23  https://tinyurl.com/2yozo6hu   
+65  https://tinyurl.com/277mbols   
+20  https://tinyurl.com/2aezpg6v   
+
+                                               skills  \
+77  "[\"Django\", \"Angular.js\", \"Jest\", \"Java...   
+11  "[\"Figma\", \"Twilio\", \"Gunicorn\", \"Pytho...   
+23  "[\"Angular Materials\", \"JavaScript\", \"Mon...   
+65  "[\"HTML\", \"Adaptability\", \"Redux\", \"Pos...   
+20  "[\"Generative AI\", \"TensorFlow\", \"Kaggle\...   
+
+                                         technologies  \
+77  "[\"Twitter API\", \"Django\", \"Angular.js\",...   
+11  "[\"Tailwind CSS\", \"Twilio\", \"Simple JWT\"...   
+23  "[\"AWS S3\", \"NestJS\", \"Bcrypt\", \"NodeJs...   
+65  "[\"AWS\", \"mongodb\", \"Firebase\", \"JWT\",...   
+20  "[\"MLOps\", \"Streamlit\", \"YOLO models\", \...   
+
+                                        score_summary  
+77  The candidate has a strong background in progr...  
+11  The candidate has a solid foundation in front-...  
+23  The candidate is a skilled MEAN stack develope...  
+65  The candidate has a good foundation in front-e...  
+20  The candidate has a strong background in machi...  }
+2024-05-22 17:57:22 [INFO] Executing Step 8: ResultParsing
